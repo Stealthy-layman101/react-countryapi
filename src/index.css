@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Nunito sans;
+  background-color: hsl(0, 20%, 97%);
+  color: hsl(200, 15%, 8%);
+}
+
+.theme-div {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  background-color: whitesmoke;
+}
+
+.light-p{
+  display: none;
+}
+
+.filter-div, .regions-div{
+  background-color: whitesmoke;
+}
+
+.caret-up{
+  margin-left: 7.5rem;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.caret-down{
+  margin-left: 7.5rem;
+  margin-top: 3px;
+  position: absolute;
+  display: none;
+}
+
+.regions-div{
+  margin-top: 12rem;
+  z-index: 1;
+  display: none;
+}
+
+.filter-div{
+  display: flex;
+}
+
+.country-name{
+  font-weight: bold; 
+}
+
+.back-div{
+  display: none;
+  background-color: whitesmoke;
+}
