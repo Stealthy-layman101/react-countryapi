@@ -13,12 +13,18 @@ body{
   color: hsl(200, 15%, 8%);
 }
 
+.default-countries{
+  display: flex;
+  flex-direction: column;
+}
+
 .theme-div {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
   background-color: whitesmoke;
 }
 
 .light-p{
+  cursor: pointer;
   display: none;
 }
 
@@ -30,6 +36,7 @@ body{
   margin-left: 7.5rem;
   margin-top: 5px;
   position: absolute;
+  cursor: pointer;
 }
 
 .caret-down{
@@ -37,23 +44,103 @@ body{
   margin-top: 3px;
   position: absolute;
   display: none;
+  cursor: pointer;
 }
 
 .regions-div{
   margin-top: 12rem;
   z-index: 1;
+  width: 180px;
   display: none;
 }
 
 .filter-div{
   display: flex;
+  width: 180px;
 }
 
 .country-name{
   font-weight: bold; 
+  margin-top: 1rem;
+}
+
+.native-name{
+  margin-top: 0.5rem;
 }
 
 .back-div{
+  cursor: pointer;
   display: none;
   background-color: whitesmoke;
+  width: 180px;
+}
+
+.logo-img2{
+  width: 300px;
+  height: 250px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .dark-p{
+    cursor: pointer;
+  }
+
+  .country-input{
+    cursor: pointer;
+    width: 25%;
+  }
+
+  .filter-div{
+    position: relative;
+    left: 85%;
+    bottom: 5rem;
+  }
+
+  .regions-div{
+    left: 85%;
+    margin-top: 8rem;
+  }
+
+  .region-p{
+    cursor: pointer;
+  }
+
+  .default-countries{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .country-li{
+    display: flex;
+  }
+
+  .country-info1{
+    position: relative;
+    left: 20%;
+    bottom: 3rem;
+  }
+
+  .country-info2{
+    position: relative;
+    left: 30%;
+    bottom: 0.5rem;
+    width: 300px;
+  }
+
+  .border-div{
+    position: relative;
+    width: 200px;
+    left: 9rem;
+    top: 9rem;
+  }
+
+  .logo-img2{
+    position: relative;
+    left: 12rem;
+    bottom: 3rem;
+    width: 400px;
+    height: 300px;
+  }
 }
